@@ -1,0 +1,7 @@
+include 'web'
+
+rootProject.children.each {
+    it.buildFileName = it.name + '.gradle'
+}
+
+rootProject.name = 'simple-spring-mvc-gradle-example'

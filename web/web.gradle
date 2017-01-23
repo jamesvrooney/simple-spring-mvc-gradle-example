@@ -1,0 +1,28 @@
+apply plugin: 'war'
+apply plugin: 'org.akhikhl.gretty'
+
+dependencies {
+	compile 'org.springframework:spring-webmvc:4.3.5.RELEASE'
+	compile 'org.thymeleaf:thymeleaf-spring4:3.0.3.RELEASE'
+    	providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+}
+
+description = 'Web module in multi-project build.'
+
+//Gretty
+buildscript {
+  	repositories {
+    		jcenter()
+ 	}
+
+  	dependencies {
+    		classpath 'org.akhikhl.gretty:gretty:+'
+  	}
+}
+
+gretty {
+  	port = 8080
+  	//contextPath = 'simple-spring-mvc-gradle'
+  	contextPath = ''
+  	servletContainer = 'jetty9'
+}
