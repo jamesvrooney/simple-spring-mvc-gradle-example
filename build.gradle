@@ -2,7 +2,7 @@ allprojects {
 	group = 'com.rooney.james'
 	version = '1.0.0'
 
-	ext.springVersion = '4.0.6.RELEASE'
+	ext.springVersion = '4.3.5.RELEASE'
 }
 
 description = 'Simple Spring 4 web project' 
@@ -16,15 +16,11 @@ subprojects {
 	}
 
 	dependencies {
-    		//compile 'org.springframework:spring-core:${springVersion}'
-    		//compile 'org.springframework:spring-context:${springVersion}'
     		compile 'org.springframework:spring-core:' + springVersion
     		compile 'org.springframework:spring-context:' + springVersion
-    		//compile 'org.springframework:spring-core:4.0.6.RELEASE'
-    		//compile 'org.springframework:spring-context:4.0.6.RELEASE'
     		compile 'joda-time:joda-time:2.3'
     		compile 'org.jadira.usertype:usertype.core:3.0.0.CR1'
     		testCompile 'junit:junit:4.10'
-    		testCompile 'org.springframework:spring-test:${springVersion}'
+    		testCompile 'org.springframework:spring-test:' + springVersion
 	}
 }
