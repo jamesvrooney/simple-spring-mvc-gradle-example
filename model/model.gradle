@@ -1,0 +1,5 @@
+description = "Module to contain all entities for this project"
+
+dependencies {
+    compile 'org.hibernate:hibernate-core:4.3.6.Final'
+}
