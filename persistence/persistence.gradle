@@ -1,0 +1,10 @@
+description = 'This is the peristence layer of the application'
+
+dependencies {
+    compile project(':model')
+
+    compile 'org.springframework:spring-orm:' + springVersion
+    compile 'mysql:mysql-connector-java:5.1.31'
+
+    testCompile 'com.h2database:h2:1.2.131'
+}
