@@ -16,8 +16,12 @@ subprojects {
 	}
 
 	dependencies {
-    		compile 'org.springframework:spring-core:${springVersion}'
-    		compile 'org.springframework:spring-context:${springVersion}'
+    		//compile 'org.springframework:spring-core:${springVersion}'
+    		//compile 'org.springframework:spring-context:${springVersion}'
+    		compile 'org.springframework:spring-core:' + springVersion
+    		compile 'org.springframework:spring-context:' + springVersion
+    		//compile 'org.springframework:spring-core:4.0.6.RELEASE'
+    		//compile 'org.springframework:spring-context:4.0.6.RELEASE'
     		compile 'joda-time:joda-time:2.3'
     		compile 'org.jadira.usertype:usertype.core:3.0.0.CR1'
     		testCompile 'junit:junit:4.10'
