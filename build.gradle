@@ -5,7 +5,7 @@ allprojects {
 	ext.springVersion = '4.3.5.RELEASE'
 }
 
-description = 'Simple Spring 4 web project'
+description = "Simple Spring 4 web project"
 
 subprojects {
 	apply plugin: 'java'
