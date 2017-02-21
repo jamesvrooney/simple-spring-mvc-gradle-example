@@ -20,7 +20,7 @@ subprojects {
     		compile 'org.springframework:spring-context:' + springVersion
     		compile 'joda-time:joda-time:2.3'
     		compile 'org.jadira.usertype:usertype.core:3.0.0.CR1'
-    		testCompile 'junit:junit:4.10'
+    		testCompile 'junit:junit:4.12'
     		testCompile 'org.springframework:spring-test:' + springVersion
 	}
 }

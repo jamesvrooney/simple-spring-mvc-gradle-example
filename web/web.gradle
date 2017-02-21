@@ -22,7 +22,7 @@ buildscript {
 }
 
 gretty {
-  	port = 8080
+  	httpPort = 8080
   	//contextPath = 'simple-spring-mvc-gradle'
   	contextPath = ''
   	servletContainer = 'jetty9'
